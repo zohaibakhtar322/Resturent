@@ -1,0 +1,668 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+
+.announcement-bar p {
+    padding: 7px 0;
+    background: #32373C;
+    color: #fab900;
+    font-size: 14px;
+}
+
+/*  */
+/* header */
+
+.header {
+    padding: 18px 60px;
+    background-color: #fab900;
+    position: relative;
+    z-index: 99;
+    transition: all 0.3s linear;
+}
+
+.header-menu-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-start;
+    width: 75%;
+    justify-content: end;
+}
+
+.navbar a svg {
+    color: #32373C;
+}
+
+.navbar ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    padding: 0px 10px 10px;
+    font-weight: 700;
+    color: #32373C;
+    display: inline-block;
+    position: relative;
+}
+
+#active::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 12px;
+    background-color: #32373C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar ul li a:after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 12px;
+    background-color: #32373C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#open a::after {
+    content: '';
+    position: absolute;
+    width: 85% !important;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 12px;
+    background-color: #32373C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#Pricing a::after {
+    content: '';
+    position: absolute;
+    width: 88% !important;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 12px;
+    background-color: #32373C;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#Pricing a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#open a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a svg {
+    color: #32373C;
+    width: 20px;
+    padding-top: 3px;
+}
+
+header#header {
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.logo {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a p {
+    color: #32373C;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: -13px;
+}
+
+.navbar ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.search-popup {
+    background: #fab900;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    color: #32373C;
+    left: 0;
+    z-index: 9999999999;
+}
+
+input#search {
+    width: 33%;
+    height: 50px;
+    padding: 12px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid #32373C;
+    background-color: #fab900;
+}
+
+i.fa-solid.fa-xmark {
+    position: relative;
+    right: 33px;
+    font-size: 21px;
+    cursor: pointer;
+    color: #32373C;
+}
+
+.humburger {
+    display: none;
+}
+
+
+/*  */
+/* End-header */
+
+.bread-crumb-item a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fab900;
+}
+
+.bread-crumb-item span {
+    color: white;
+}
+
+.bread-crumb-item a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.hero-tittle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+}
+
+.resturant-name h1 {
+    font-size: 36px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.bread-crumb-item {
+    background: #32373C;
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.hero-tittle svg {
+    width: 29px;
+    fill: #32373C;
+    margin-top: -50px;
+}
+
+
+/*  */
+
+.information-container {
+    padding: 50px 30px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.contact-number {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contact-number p {
+    font-size: 17px;
+    line-height: 30px;
+    color: #fab900;
+    font-weight: 500;
+}
+
+p#touch {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    color: #32373C;
+    margin-bottom: 30px;
+}
+
+.socialmedia-account {
+    margin-top: 85px;
+}
+
+.socialmedia-account ul {
+    list-style: none;
+    margin-top: 32px;
+    padding: 0 5px;
+}
+
+.socialmedia-account p {
+    font-size: 18px;
+    color: #32373C;
+    font-weight: 600;
+}
+
+.socialmedia-account ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.socialmedia-account ul li svg {
+    width: 12px;
+    color: #fab900;
+}
+
+.socialmedia-account ul li a {
+    text-decoration: none;
+    color: #fab900;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 22px;
+}
+
+.socialmedia-account ul li a:hover {
+    color: #32373C;
+    text-decoration: underline;
+}
+
+/*  */
+
+#contact {
+    position: relative;
+}
+
+#contact-box {
+    padding: 1px;
+    margin-bottom: -134px;
+    margin-top: 100px;
+    background-color: #fab900;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(245, 241, 241);
+}
+
+label {
+    color: #32373C;
+    font-size: 20px;
+}
+
+#contact-box form {
+    width: 45%;
+}
+
+#contact label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.contact-box-bg {
+    padding: 34px;
+    margin-top: 60px;
+    margin-right: 160px;
+    margin-left: 160px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    background-color: #32373C;
+}
+
+.footer-container {
+    padding: 50px 30px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+#factive {
+    text-decoration: underline;
+}
+
+.facebook a svg {
+    width: 14px;
+    color: white;
+}
+
+.insta a svg {
+    width: 14px;
+    color: white;
+}
+
+.tiktok a svg {
+    width: 14px;
+    color: white;
+}
+
+.facebook a {
+    width: 46px;
+    height: 46px;
+    background: #fab900;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.facebook a:hover {
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.facebook a:hover svg {
+    color: #32373C;
+}
+
+.tiktok a {
+    width: 46px;
+    height: 46px;
+    background: #fab900;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.tiktok a:hover {
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.tiktok a:hover svg {
+    color: #32373C;
+}
+
+.insta a {
+    width: 46px;
+    height: 46px;
+    background: #fab900;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.insta a:hover {
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.insta a:hover svg {
+    color: #32373C;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.insta {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.copyright {
+    color: white;
+    margin-top: 40px;
+}
+
+.copyright p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.footer-left-design {
+    position: relative;
+    top: 70px;
+}
+
+.footer-right-design {
+    position: relative;
+    top: 70px;
+}
+
+.footer-design {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:767px) {
+
+
+    /* header */
+
+
+    .humburger {
+        display: block;
+    }
+
+    .bar i {
+        font-size: 29px !important;
+    }
+
+    .cross i {
+        font-size: 29px !important;
+    }
+
+    .navbar a svg {
+        display: none;
+    }
+
+    nav.navbar {
+        position: absolute;
+        top: 88px;
+        flex-direction: column;
+        background-color: #32373C;
+        width: 90%;
+        left: -100%;
+        text-align: justify;
+        justify-content: flex-start;
+        height: 100vh;
+        transition: all 0.3s linear;
+    }
+
+    nav.navbar.active {
+        left: 0;
+    }
+
+    .cross {
+        position: relative;
+        left: 28px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        font-size: 25px;
+        text-decoration: none;
+        padding: 20px 35px 10px;
+        font-weight: 600;
+        color: #fab900 !important;
+    }
+
+    .navbar ul li a:after {
+        width: 67%;
+        left: 37px;
+    }
+
+    #open a::after {
+        width: 74% !important;
+        left: 39px !important;
+    }
+
+    #Pricing a::after {
+        width: 79% !important;
+        left: 39px !important;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 70px;
+    }
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    .logo a p {
+        font-size: 9px;
+    }
+
+    /* End-header */
+
+    .bread-crumb-item {
+        height: 85px;
+        width: 69%;
+        padding-top: 10px;
+    }
+
+    .bread-crumb-item a {
+        font-size: 13px;
+    }
+
+    .resturant-name h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .hero-tittle {
+        top: 35px;
+    }
+
+    .hero-tittle svg {
+        width: 25px;
+        margin-top: -57px;
+    }
+
+    .information-container {
+        padding: 15px 15px 0;
+    }
+
+    .socialmedia-account {
+        margin-top: 60px;
+    }
+
+    #contact-box form {
+        width: 100%;
+    }
+
+    .contact-box-bg {
+        margin-right: 0px;
+        margin-left: 0px;
+        border-radius: 0;
+    }
+
+
+
+
+
+    /* footer */
+
+    .footer-content ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content ul li a {
+        padding-top: 12px;
+    }
+
+    /*  */
+}
